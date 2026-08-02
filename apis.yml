@@ -1,8 +1,24 @@
 aid: tile
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tile.png
 name: Tile
-description: 'Tile is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Tile is a consumer-electronics company known for its Bluetooth tracker
+  devices, used to locate everyday items such as keys, wallets, bags, and phones through
+  a companion mobile app and a crowd-sourced Find network. Tile was acquired by Life360
+  in 2021; its former site thetileapp.com now 301-redirects to life360.com. Surfaced
+  as a portfolio company of Bessemer Venture Partners, Tile publishes no public developer
+  API — this profile captures its security posture (security.txt, a HackerOne responsible-disclosure
+  program, and probed domain security).'
 url: https://raw.githubusercontent.com/api-evangelist/tile/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Consumer Electronics
+- Bluetooth
+- Tracking
+- Location
+- IoT
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +47,18 @@ maintainers:
 common:
 - type: Website
   url: https://www.thetileapp.com/
+- type: WellKnown
+  url: well-known/tile-well-known.yml
+- type: SecurityTxt
+  url: well-known/tile-well-known.yml
+- type: DomainSecurity
+  url: security/tile-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/tile-vulnerability-disclosure.yml
+- type: Security
+  url: https://hackerone.com/life360
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

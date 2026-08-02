@@ -1,0 +1,17 @@
+generated: '2026-07-21'
+method: searched
+source: live probe of https://www.thetileapp.com/.well-known/*
+host: https://www.thetileapp.com
+notes: >-
+  thetileapp.com issues a 301 redirect to life360.com (Tile was acquired by
+  Life360 in 2021). The security.txt resolves via that redirect. Other
+  well-known discovery paths were not individually confirmed; only verified
+  hits are recorded here. The site is fronted by Cloudflare, which returns 403
+  to non-browser clients, so verbatim raw capture of the document was not
+  possible — its parsed contents are recorded in
+  security/tile-vulnerability-disclosure.yml.
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  redirect: https://www.life360.com/.well-known/security.txt
+  captured_in: security/tile-vulnerability-disclosure.yml
