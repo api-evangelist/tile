@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://www.thetileapp.com/', status: 301, note: 'declared website redirects to https://www.life360.com/ — a different registrable domain (thetileapp.com -> life360.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tile.png
 name: Tile
 description: 'Tile is a consumer-electronics company known for its Bluetooth tracker
